@@ -1,0 +1,140 @@
+@media print {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  div.tm-main-content {
+    margin-left: 30px;
+    padding-left: 0;
+  }
+
+  #home {
+    margin-bottom: 5px;
+  }
+
+  div.tm-banner {
+    height: 250px;
+  }
+
+  p.tm-banner-text::first-letter,
+  p.tm-section-description::first-letter,
+  p.text-xs-center::first-letter {
+    font-size: unset;
+    color: unset;
+  }
+
+  .pad {
+    padding: 0;
+  }
+
+  div.tm-team-description-container {
+    max-width: 550px;
+  }
+
+  p.tm-section-description {
+    font-style: unset;
+    text-indent: unset;
+    line-height: unset;
+  }
+
+  h2.tm-section-title {
+    color: rgb(100, 137, 255);
+  }
+
+  div.flex-2-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section::before,
+  .tm-sidebar,
+  #about,
+  .heading,
+  .blocks, 
+  #ideas,
+  .img-fluid,
+  #contact {
+    display: none;
+  }
+}
+
+#about img {
+  border-radius: 50%;
+}
+
+#about h2:hover{
+  background-color: #31b0d5;
+}
+
+p::first-letter {
+  color: #76cdd7;
+  font-size: 30px;
+}
+
+.tm-sidebar,
+.tm-banner,
+.tm-content-box {
+  box-shadow: 0 0 12px rgb(168, 164, 168);
+}
+
+section::before {
+  content: '';
+  height: 0;
+  width: 0;
+  border: 25px solid transparent;
+  border-left: 110px solid rgb(58, 167, 218);
+  border-top: 0px solid rgb(58, 167, 218);
+  position: absolute;
+}
+
+#ideas h2.tm-section-title {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+h2 + p {
+  font-style: italic;
+}
+
+section p {
+  line-height: 2em;
+  text-indent: 1.5em;
+}
+
+section.heading a:visited {
+  color: rgb(205, 202, 204);
+}
+
+section.heading a:hover {
+  color: rgb(135, 209, 220);
+  text-decoration-style: double;
+}
+
+section.heading a.text::after {
+  content: 'New';
+  color: rgb(255, 58, 61);
+  vertical-align: super;
+  font-size: 70%;
+}
+
+section.blocks li.box:nth-child(odd) {
+  background-color: rgb(242, 242, 242);
+}
+
+nav ul li.tm-nav-item:not(:last-child) {
+  border-bottom: 2px dotted rgb(174, 171, 174);
+}
+
+input[type="text"],
+button[type="submit"] {
+  color: rgb(255, 66, 61);
+}
+
+.mandatory-field::after {
+  content: '*';
+  color: rgb(255, 66, 61);
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(58, 167, 218);
+}
