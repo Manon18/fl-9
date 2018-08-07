@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  font-family: sans-serif;
+  background-color: white; }
+  body .main-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px; }
+    body .main-wrapper header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      body .main-wrapper header .logo img {
+        width: 300px; }
+      body .main-wrapper header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+        border-bottom: 1px solid #d2dade;
+        border-top: 1px solid #d2dade;
+        margin-top: 55px;
+        padding-left: 60px;
+        padding-right: 60px; }
+        body .main-wrapper header nav a {
+          text-decoration: none;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: 20px 30px;
+          color: #1fbcd3; }
+    body .main-wrapper .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      body .main-wrapper .toolbar input {
+        height: 35px;
+        width: 200px;
+        border: 1px solid #1fbcd3;
+        padding-left: 20px;
+        background-color: white; }
+        body .main-wrapper .toolbar input::placeholder {
+          color: #1fbcd3; }
+        body .main-wrapper .toolbar input:focus {
+          background-color: #a8bac2; }
+    body .main-wrapper .post-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      body .main-wrapper .post-list article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 48%; }
+        body .main-wrapper .post-list article:first-child img {
+          height: 500px; }
+        body .main-wrapper .post-list article img {
+          height: 310px;
+          background-color: #efefef;
+          padding: 10px; }
+        body .main-wrapper .post-list article div {
+          background-color: #efefef;
+          padding: 0px 20px 0px 20px; }
+          body .main-wrapper .post-list article div .post-description {
+            padding: 0px 0px 10px 5px;
+            color: #92abb8;
+            font-size: 13px; }
+          body .main-wrapper .post-list article div h3 {
+            border-top: 1px solid #80e3ee;
+            color: #13838f;
+            text-transform: uppercase;
+            line-height: 1.45; }
+          body .main-wrapper .post-list article div p {
+            color: #506c7a;
+            margin-bottom: 20px;
+            line-height: 1.45; }
+    body .main-wrapper #about {
+      padding: 10px;
+      line-height: 1.6;
+      margin-top: 20px; }
+      body .main-wrapper #about div h1 {
+        display: flex;
+        justify-content: flex-end;
+        color: #1fbcd3;
+        text-transform: uppercase; }
+      body .main-wrapper #about div p {
+        color: #506c7a;
+        margin-bottom: 20px; }
+      body .main-wrapper #about div img {
+        width: 100%; }
+    body .main-wrapper #contact {
+      color: #2cc9e0; }
+      body .main-wrapper #contact h1 {
+        text-align: right; }
+      body .main-wrapper #contact h4 {
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 15px; }
+      body .main-wrapper #contact #control {
+        display: flex;
+        flex-direction: column; }
+        body .main-wrapper #contact #control input {
+          margin-bottom: 15px;
+          height: 40px;
+          background-color: white;
+          border: 1px solid #99aeb8;
+          padding-left: 15px; }
+          body .main-wrapper #contact #control input::placeholder {
+            color: #2c393f; }
+          body .main-wrapper #contact #control input:focus {
+            background-color: #a8bac2; }
+        body .main-wrapper #contact #control textarea {
+          height: 100px;
+          margin-bottom: 15px;
+          background-color: white;
+          border: 1px solid #99aeb8;
+          color: #2c393f;
+          padding-top: 10px;
+          padding-left: 15px; }
+          body .main-wrapper #contact #control textarea::placeholder {
+            color: #2c393f; }
+          body .main-wrapper #contact #control textarea:focus {
+            background-color: #a8bac2; }
+        body .main-wrapper #contact #control .btn {
+          width: 20%;
+          height: 35px;
+          margin-left: auto;
+          margin-right: 0;
+          background-color: #2cc9e0;
+          color: #efefef;
+          border: none;
+          text-transform: uppercase;
+          font-size: 15px; }
+          body .main-wrapper #contact #control .btn:hover {
+            background-color: #1ca8bd;
+            cursor: poiner; }
+          body .main-wrapper #contact #control .btn:focus {
+            background-color: #1894a7;
+            cursor: poiner; }
+    body .main-wrapper footer {
+      margin-top: 5px;
+      margin-bottom: 10px; }
+      body .main-wrapper footer span {
+        color: #41545d;
+        font-size: 13px; }
