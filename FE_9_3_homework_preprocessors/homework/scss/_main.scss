@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: $bodyFont;
+  background-color: $contentColor;
+
+  .main-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo img {
+        width: 300px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+        border-bottom: 1px solid lighten($navBorder, 35%);
+        border-top: 1px solid lighten($navBorder, 35%);
+        margin-top: 55px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: 20px 30px;
+          color: $toolbarInputNavA;
+        }
+      }
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      input {
+        height: 35px;
+        width: 200px;
+        border: 1px solid $toolbarInputNavA;
+        padding-left: 20px;
+        background-color: $contentColor;
+
+        &::placeholder {
+          color: $toolbarInputNavA;
+        }
+
+        &:focus {
+          background-color: lighten($controlInputTextareaFooter, 25%);
+        }
+      }
+    }
+
+    .post-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: 48%;
+
+        &:first-child {
+          img {
+            height: 500px;
+          }
+        }
+
+        img {
+          height: 310px;
+          background-color: $articleAndButtonColor;
+          padding: 10px;
+        }
+
+        div {
+          background-color: $articleAndButtonColor;
+          padding: 0px 20px 0px 20px;
+
+          .post-description {
+            padding: 0px 0px 10px 5px;
+            color: lighten($postDescriptionAndP, 15%);
+            font-size: 13px;
+          }
+
+          h3 {
+            border-top: 1px solid lighten($borderHeaderThree, 35%);
+            color: darken($borderHeaderThree, 5%);
+            text-transform: uppercase;
+            line-height: 1.45;
+          }
+
+          p {
+            color: darken($postDescriptionAndP, 10%);
+            margin-bottom: 20px;
+            line-height: 1.45;
+          }
+        }
+      }
+    }
+
+    #about {
+      padding: 10px;
+      line-height: 1.6;
+      margin-top: 20px;
+
+      div {
+        h1 {
+          display: flex;
+          justify-content: flex-end;
+          color: $headerAboutAndContact;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: darken($postDescriptionAndP, 10%);
+          margin-bottom: 20px;
+        }
+      }
+
+      div {
+        img {
+          width: 100%;
+        }
+      }
+    }   
+
+    #contact {
+      color: lighten($headerAboutAndContact, 5%);
+
+      h1 {
+        text-align: right;
+      }
+
+      h4 {
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      #control {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          margin-bottom: 15px;
+          height: 40px;
+          background-color: $contentColor;
+          border: 1px solid lighten($controlInputTextareaFooter, 20%);
+          padding-left: 15px;
+
+          &::placeholder {
+            color: darken($controlInputTextareaFooter, 25%);
+          }
+
+          &:focus {
+            background-color: lighten($controlInputTextareaFooter, 25%);
+          }
+        }
+
+        textarea {
+          height: 100px;
+          margin-bottom: 15px;
+          background-color: $contentColor;
+          border: 1px solid lighten($controlInputTextareaFooter, 20%);
+          color: darken($controlInputTextareaFooter, 25%);
+          padding-top: 10px;
+          padding-left: 15px;
+
+          &::placeholder {
+            color: darken($controlInputTextareaFooter, 25%);
+          }
+
+          &:focus {
+            background-color: lighten($controlInputTextareaFooter, 25%);
+          }
+        }
+
+        .btn {
+          width: 20%;
+          height: 35px;
+          margin-left: auto;
+          margin-right: 0;
+          background-color: lighten($headerAboutAndContact, 5%);
+          color: $articleAndButtonColor;
+          border: none;
+          text-transform: uppercase;
+          font-size: 15px;
+
+          &:hover {
+            background-color: darken($headerAboutAndContact, 5%);
+            cursor: poiner;
+          }
+
+          &:focus {
+            background-color: darken($headerAboutAndContact, 10%);
+            cursor: poiner;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin-top: 5px;
+      margin-bottom: 10px;
+
+      span {
+        color: darken($controlInputTextareaFooter, 15%);
+        font-size: 13px;
+      }
+    }
+  }
+}
