@@ -1,0 +1,98 @@
+body {
+  width: 100%;
+}
+
+#root {
+  width: 27%;
+  min-width: 27%;
+  margin: 0 auto;
+  border: 0.5px solid #000000;
+}
+
+.title {
+  text-align: center;
+}
+
+input[type='text'] {
+  width: 78%;
+  height: 15px;
+  margin-left: 9%;
+  margin-bottom: 8px;
+}
+
+input::placeholder {
+  color: #b8b894;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+ 
+.btn-plus {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#btn-plus {
+  float: right;
+  font-size: 28px;
+  padding: 0;
+  border: 0;
+  color: black;
+  margin-top: -9px;
+}
+
+.material-icons {
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid #000000;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.task-container {
+  margin-left: 26px;
+  margin-right: 25px;
+  overflow: hidden;
+}
+
+#del-icon:first-child {
+  margin-bottom: -15px;
+}
+
+#del-icon:last-child {
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -18px;
+}
+
+img.catImage {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 100px auto 15px auto;
+}
+
+label.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+label.checkbox-container:nth-child(-n+1) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.checkbox-container > i.material-icons {
+  font-size: 24px;
+}
+
+.checkbox-container > input[type=checkbox] {
+  display: none;
+}
