@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.title-application {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.btn-add-task {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 40%;
+  height: 35px;
+  font-size: 21px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 27px;
+}
+
+.title-empty {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.page-container {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-task {
+  margin-top: 60px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel {
+  font-size: 21px;
+  width: 25%;
+  border-radius: 7px;
+  margin-top: 15px;
+  outline: none;
+  margin-left: -25px;
+}
+
+.save-changes {
+  width: 45%;
+  border-radius: 7px;
+  font-size: 21px;
+  margin-top: 15px;
+  outline: none;
+  margin-right: -25px;
+}
+
+.modify-task {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.save-modify-changes {
+  outline: none;
+  font-size: 21px;
+  margin-right: -25px;
+  width: 45%;
+  margin-top: 15px;
+  border-radius: 7px;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#addNewItemPage {
+  display: none;
+}
+
+#editItemPage {
+  display: none;
+}
