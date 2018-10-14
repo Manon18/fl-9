@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>FL 9 3 homework AJAX</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="input-container">
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat_coords">
+      </div>
+      <div class="input-container">
+        <label for="lon">Longitude:</label>
+        <input type="text" id="lon" name="lon_coords">
+      </div>
+      <button type="button" id="btn">Where I am?</button>
+    </form>
+    <div class="spinner"></div>
+    <div class="animation-center-water">
+      <p class="water-text">Water</p>
+      <div class="animation-water-top">
+        <div class="drop"></div>
+        <div class="drop"></div>
+        <div class="drop"></div>
+      </div>
+      <div class="animation-water-bottom">
+        <div class="wave">
+        </div>
+      </div>
+    </div>
+    <div class="animation-center-land">
+      <p class="land-text">Land</p>
+      <div class="moon-container">
+        <div class="moon"></div>
+      </div>
+      <div class="cloud-container">
+        <div class="cloud"></div>
+      </div>
+      <div class="animation-land-top">
+        <div class="mountain-one"></div>
+        <div class="mountain-one mountain-two"></div>
+      </div>
+      <div class="animation-land-bottom">
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
