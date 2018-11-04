@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$turqoise: #26a69a;
+$red: #E57373;
+$gray: #f8f8f8;
+$white: #fff;
+
+$shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+.root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// You can import your styles here
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  .wrapper {
+    box-shadow: $shadow;
+    margin-bottom: 25px;
+
+    .header-container {
+      width: 20%;
+      margin: 0 auto;
+      padding: 10px;
+
+      .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        label {
+          margin-right: 7px;
+        }
+
+        input {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #000;
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+
+  hr {
+    border: 1px solid $gray;
+    margin-top: 50px;
+  }
+
+  .contact-information {
+    margin: 0 auto;
+    width: 90%;
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-spacing: 0;
+
+      .table-header {
+        background-color: $turqoise;
+        color: $white;
+        height: 70px;
+      }
+
+      tr:nth-child(even) {
+        background-color: $gray;
+      }
+
+      td {
+        padding: 20px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .remove-btn {
+          background-color: $red;
+          color: $white;
+          height: 30px;
+          border: none;
+          font-weight: 600;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .count-users-dispay {
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .load-more-btn {
+      height: 40px;
+      width: 400px;
+      margin: 0 auto;
+      text-transform: uppercase;
+      border-radius: 25px;
+      margin-bottom: 15px;
+      background-color: $gray;
+      box-shadow: $shadow;
+      border: none;
+    }
+  }
+}
+
+.invisible {
+  display: none;
+}
