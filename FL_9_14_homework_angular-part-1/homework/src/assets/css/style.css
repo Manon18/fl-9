@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.posts-wall-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 99.5%;
+  height: 25px;
+  border: 1px solid #d9d9d9;
+}
+
+input::placeholder {
+  padding-left: 15px;
+}
+
+.post-container {
+  background-color: #fff;
+  margin-bottom: 2em;
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+}
+
+.photo-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.name-author {
+  margin-left: 15px;
+}
+
+.post-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.inner-post-text {
+  text-align: justify;
+}
+
+.likes {
+  background-image: url('../img/heart.svg');
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+}
+
+.btn-count {
+  margin-left: 10px;
+  width: 5px;
+}
+
+.liked {
+  background-image: url('../img/heart-active.svg');
+  height: 35px;
+  width: 35px;
+}
+
+form {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 30px;
+  box-shadow: 0 7px 30px 0 #8c8c8c;
+}
+
+form input[type="text"] {
+  margin-top: 10px;
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+}
+
+.add-save-edit-btn {
+  background-color: #fff;
+  border: 1px solid #4db8ff;
+  color: #4db8ff;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
