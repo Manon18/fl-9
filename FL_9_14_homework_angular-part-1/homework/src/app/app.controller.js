@@ -51,25 +51,24 @@ angular.module('postsApp')
     this.like = function (id) {
       let postToLike = this.displayPosts[id];
 
-       if (!postToLike.liked_by.some((p) => p.id == this.user.id)) {
+      if (!postToLike.liked_by.some((p) => p.id == this.user.id)) {
         postToLike.liked_by.push(this.user);      
-       } else {
-         for (let i = 0; i < postToLike.liked_by.length; i++) {
+      } else {
+        for (let i = 0; i < postToLike.liked_by.length; i++) {
           if (postToLike.liked_by[i].id === this.user.id) {
             postToLike.liked_by.splice(i, 1);
           }
-         }
-       }
-      
+        }
+      }
     }
 
     this.isLikedByMe = function(id) {
       let post = this.displayPosts[id];
 
       for (let i = 0; i < post.liked_by.length; i++) {
-          if (post.liked_by[i].id === this.user.id) {
-            return true;
-          }
+        if (post.liked_by[i].id === this.user.id) {
+          return true;
+        }
       }
 
       return false;
