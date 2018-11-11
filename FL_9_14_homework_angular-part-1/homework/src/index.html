@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Angular-homework-14</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body ng-app="postsApp">
+  <div ng-controller="postsController as postsCtrl">
+
+    <div class="main-container">
+      <h1 class="posts-wall-header">Posts wall</h1>
+      <input type="text" placeholder="Search by title..." ng-model="postsCtrl.searchText" ng-change="postsCtrl.onSearchChanged(postsCtrl.searchText)" />
+
+      <div ng-repeat="post in postsCtrl.displayPosts" class="post-container">
+        <div class="photo-name-container">
+          <img class="author-photo" ng-src="{{post.author_photo}}" alt="author photo" />
+          <span class="name-author">{{post.author_name}}</span>
+        </div>
+        <div class="read-mode-post" ng-if="!post.isEditMode">
+          <h1 class="post-title">{{post.title}}</h1>
+          <p class="inner-post-text">{{post.message}}</p>
+          <div class="btn-container">
+            <button class="likes" ng-click="postsCtrl.like($index)" ng-class="{ 'liked': postsCtrl.isLikedByMe($index) }">
+            </button>
+            <div class="btn-count">{{post.liked_by.length}}</div>
+          </div>
+          <button ng-if="postsCtrl.isMyPost($index)" class="edit-btn add-save-edit-btn" ng-click="postsCtrl.openEditForm($index)">Edit</button>
+        </div>
+
+        <div class="edit-mode-post" ng-if="post.isEditMode">
+          <form>        
+            <input ng-model="post.editedTitle" type="text">
+            <textarea ng-model="post.editedMessage"></textarea>
+            <button class="add-save-edit-btn" type="button" ng-click="postsCtrl.saveEditedPost($index)">Save</button>
+            <button class="cancel-btn" type="button" ng-click="post.isEditMode = false">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <button class="add-save-edit-btn" type="button" ng-if="!postsCtrl.isNewPostsFormVisible"
+        ng-click="postsCtrl.isNewPostsFormVisible = true">Add new post</button>
+
+      <form ng-if="postsCtrl.isNewPostsFormVisible">
+        <div class="photo-name-container">
+          <img class="author-photo" ng-src="{{postsCtrl.user.photo}}" alt="author photo" />
+          <span class="name-author">{{postsCtrl.user.name}}</span>
+        </div>
+        <input ng-model="postsCtrl.newPostTitle" type="text">
+        <textarea ng-model="postsCtrl.newPostMessage"></textarea>
+        <button class="add-save-edit-btn" type="button" ng-click="postsCtrl.savePost()">Save</button>
+        <button class="cancel-btn" type="button" ng-click="postsCtrl.isNewPostsFormVisible = false">Cancel</button>
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+  <script src="app/app.constants.js"></script>
+  <script src="app/app.module.js"></script>
+  <script src="app/app.controller.js"></script>  
+</body>
+</html>
